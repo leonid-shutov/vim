@@ -23,7 +23,7 @@ call plug#end()
 "let ayucolor="dark"
 "colorscheme ayu
 
-colorscheme github_dark
+colorscheme github_dark_default
 
 let g:prettier#autoformat = 1
 let g:prettier#autoformat_require_pragma = 0
