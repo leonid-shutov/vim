@@ -10,18 +10,13 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug 'ayu-theme/ayu-vim'
 Plug 'sindrets/diffview.nvim'
 Plug 'projekt0n/github-nvim-theme'
 Plug 'prettier/vim-prettier', { 'do': 'npm install --only=production' }
-Plug 'dense-analysis/ale' "Eslint
+Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
-
-"set termguicolors
-"let ayucolor="dark"
-"colorscheme ayu
 
 colorscheme github_dark_default
 
@@ -39,3 +34,5 @@ let mapleader = " "
 nnoremap <leader>e :Vex<CR><C-w>o
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <leader>d :DiffviewOpen<CR>
+vnoremap <leader>y "+y
+
