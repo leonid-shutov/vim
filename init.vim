@@ -35,4 +35,6 @@ nnoremap <leader>e :Vex<CR><C-w>o
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <leader>d :DiffviewOpen<CR>
 vnoremap <leader>y "+y
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
 
