@@ -33,8 +33,18 @@ nnoremap <C-k> :cprev<CR>
 let mapleader = " "
 nnoremap <leader>e :Vex<CR><C-w>o
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+
+"Git diff
 nnoremap <leader>d :DiffviewOpen<CR>
+nnoremap <leader>do :DiffviewClose<CR>
+
+"Comments
+nnoremap <leader>/ 0i//<ESC>
+
+"Copy
 vnoremap <leader>y "+y
+
+"Move selection
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 
