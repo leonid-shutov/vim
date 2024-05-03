@@ -37,6 +37,7 @@ nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 "Git diff
 nnoremap <leader>d :DiffviewOpen<CR>
 nnoremap <leader>do :DiffviewClose<CR>
+nnoremap <leader>dr :DiffviewRefresh<CR>
 
 "Comments
 nnoremap <leader>/ 0i//<ESC>
