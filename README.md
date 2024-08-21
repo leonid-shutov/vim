@@ -18,7 +18,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'kdheepak/lazygit.nvim'
 
 call plug#end()
-test
+
 colorscheme github_dark_default
 
 let g:prettier#autoformat = 1
