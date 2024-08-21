@@ -10,11 +10,11 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'sindrets/diffview.nvim'
 Plug 'projekt0n/github-nvim-theme'
 Plug 'prettier/vim-prettier', { 'do': 'npm install --only=production' }
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
+Plug 'kdheepak/lazygit.nvim'
 
 call plug#end()
 
@@ -35,9 +35,7 @@ nnoremap <leader>e :Vex<CR><C-w>o
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 
 "Git diff
-nnoremap <leader>d :DiffviewOpen<CR>
-nnoremap <leader>do :DiffviewClose<CR>
-nnoremap <leader>dr :DiffviewRefresh<CR>
+nnoremap <leader>d :LazyGit<CR>
 
 "Comments
 nnoremap <leader>/ 0i//<ESC>
