@@ -7,7 +7,8 @@ const getOutput = ({ stdout }) => stdout;
 const getWorkingTreeStatus = () => $`git status --porcelain`.then(getOutput);
 
 (async () => {
-  await $`echo ${"```vim"} > README.md`;
+  await $`echo ${"# Neovim configuration"} > README.md`;
+  await $`echo ${"```vim"} >> README.md`;
   await $`cat init.vim >> README.md`;
   await $`echo ${"```"} >> README.md`;
 
