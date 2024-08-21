@@ -1,0 +1,14 @@
+name: Update readme
+on:
+  push:
+    branches:
+      - "master"
+jobs:
+  Update-Readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v3
+
+      - name: Write contents of init.vim into README.md
+        run: npx zx .github/workflows/update-readme.mjs
