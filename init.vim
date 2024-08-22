@@ -15,6 +15,7 @@ Plug 'prettier/vim-prettier', { 'do': 'npm install --only=production' }
 Plug 'dense-analysis/ale'
 Plug 'jiangmiao/auto-pairs'
 Plug 'kdheepak/lazygit.nvim'
+Plug 'preservim/nerdcommenter'
 
 call plug#end()
 
