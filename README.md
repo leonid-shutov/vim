@@ -14,7 +14,9 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'projekt0n/github-nvim-theme'
 Plug 'jiangmiao/auto-pairs'
+Plug 'MunifTanjim/nui.nvim'
 Plug 'kdheepak/lazygit.nvim'
+Plug 'crnvl96/lazydocker.nvim'
 Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -81,6 +83,9 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 " Formatting selected code
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+
+" LazyDocker
+autocmd VimEnter * lua require('lazydocker').setup()
 
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-j> :cnext<CR>
