@@ -11,7 +11,6 @@ call plug#begin('~/.vim/plugged')
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'projekt0n/github-nvim-theme'
-Plug 'jiangmiao/auto-pairs'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'crnvl96/lazydocker.nvim'
