@@ -92,17 +92,18 @@ let mapleader = " "
 nnoremap <leader>e :Vex<CR><C-w>o
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 
+" Telescope
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 
-"Git diff
+" Git diff
 nnoremap <leader>d :LazyGit<CR>
 
-"Comments
+" Comments
 nnoremap <leader>/ 0i//<ESC>
 
-"Copy
+" Copy
 vnoremap <leader>y "+y
 
 "Move selection
