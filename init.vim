@@ -8,14 +8,15 @@ set smartindent
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'projekt0n/github-nvim-theme'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'kdheepak/lazygit.nvim'
 Plug 'crnvl96/lazydocker.nvim'
 Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-lua/plenary.nvim'
 
 call plug#end()
 
@@ -90,6 +91,10 @@ nnoremap <C-k> :cprev<CR>
 let mapleader = " "
 nnoremap <leader>e :Vex<CR><C-w>o
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
 
 "Git diff
 nnoremap <leader>d :LazyGit<CR>
